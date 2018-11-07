@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+
+
+main{
+    max-width: 700px;
+    width: 90%; 
+    margin-top: 65px;
+    margin-bottom: auto;
+    padding: 10px 0;
+}
+
+.input-output{
+    border: 1px solid #ddd;
+    width:100%; 
+    font-size: 16px;
+    background: #eee;
+}
+
+.sucesso{
+    border: 1px solid green;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.erro{
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+button{
+    padding: 10px;
+    background: #f0db4f;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 1px solid  #eee;
+}
+
+
+.txt-centro{
+    text-align: center;
+}
+
+.icone{
+    vertical-align: bottom;
+}
+
+
+footer{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.CodeMirror {
+    height: auto;
+    min-height: 150px;
+    border: 1px solid #ddd;
+    width: 102%;
+}
+
+.CodeMirror-scroll {
+    max-height: 200px;
+}
+
+.CodeMirror pre {
+    padding-left: 7px;
+    line-height: 1.25;
+}
+
+
+#columns {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.column {
+    display: inline-block;
+    border: 1px solid #eee;
+    background-color: #009688;
+    margin:2px -5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: move;
+    color: #ffffff;
+}
+
+.column.over {
+    border: 2px dashed #000;
+}
+
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #f0db4f;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 100%; /* Full width */
+    height: 60px;
+    z-index: 9999;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    width: 50%;
+    font-weight: 700;
+    height: 60px;
+
+}
+
+.navbar a:first-child { 
+    border-right: 1px solid #eee;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #efd428;
+    color: black;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(max-width: 600px){
+    .navbar {
+        position: fixed; /* Set the navbar to fixed position */
+        bottom: 0; /* Position the navbar at the bottom of the page */
+        width: 100%; /* Full width */
+        top: auto;
+    }
+
+    main {
+        margin-top: auto;
+        margin-bottom: 65px;
+    }
+}
